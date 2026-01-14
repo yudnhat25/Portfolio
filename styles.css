@@ -4,7 +4,7 @@
 
 :root {
     /* Color Palette - Light Blue Pastel Theme */
-    --primary-gradient: linear-gradient(135deg, #a8c0ff 0%, #3f5efb 100%);
+    --primary-gradient: linear-gradient(135deg, #7b9cff 0%, #2d47d9 100%);
     --secondary-gradient: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
     --accent-gradient: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
     --success-gradient: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
@@ -123,10 +123,11 @@ h6 {
 
 h1 {
     font-size: clamp(2.5rem, 5vw, 4rem);
-    background: var(--primary-gradient);
+    background: linear-gradient(135deg, #6b85ff 0%, #2d47d9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: 900;
 }
 
 h2 {
@@ -415,12 +416,13 @@ a:hover {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
-    color: var(--text-secondary);
+    color: var(--text-primary);
     transition: var(--transition-fast);
+    font-weight: 600;
 }
 
 .contact-item:hover {
-    color: var(--accent-cyan);
+    color: #2d47d9;
     transform: translateX(5px);
 }
 
@@ -945,10 +947,11 @@ a:hover {
    =================================== */
 
 .text-gradient {
-    background: var(--primary-gradient);
+    background: linear-gradient(135deg, #6b85ff 0%, #2d47d9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: 700;
 }
 
 .text-center {
