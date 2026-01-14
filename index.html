@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cao Nhat Duy - Data Science, Data Analyst & Business Analyst Portfolio. Experienced in Machine Learning, Deep Learning, NLP, and Data Visualization.">
+    <meta name="keywords"
+        content="Data Analyst, Data Science, Business Analyst, Machine Learning, Python, SQL, Portfolio">
+    <meta name="author" content="Cao Nhat Duy">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Cao Nhat Duy - Data Science Portfolio">
+    <meta property="og:description"
+        content="Professional portfolio showcasing data analytics, machine learning, and business intelligence projects">
+    <meta property="og:type" content="website">
+
+    <title>Cao Nhat Duy | Data Science, Data Analyst & Business Analyst</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">CND</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">👋 Hello, I'm</p>
+                <h1 class="hero-title">CAO NHAT DUY</h1>
+                <p class="hero-subtitle">Transforming Data into Actionable Insights</p>
+
+                <div class="hero-roles">
+                    <span class="role-tag">📊 Data Science</span>
+                    <span class="role-tag">📈 Data Analyst</span>
+                    <span class="role-tag">💼 Business Analyst</span>
+                </div>
+
+                <p class="hero-description">
+                    Third-year FinTech student with strong analytical skills, experienced in working with datasets,
+                    modeling user behavior, and building dashboards for insights. Proficient in Excel, SQL, and data
+                    visualization tools. Fast learner with the ability to work under pressure and collaborate
+                    effectively
+                    in cross-functional teams.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View My Work</a>
+                </div>
+
+                <div class="hero-social" style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center;">
+                    <span style="color: var(--text-muted); font-weight: 500;">Connect with me:</span>
+                    <a href="https://github.com/yudnhat25" target="_blank" rel="noopener noreferrer"
+                        style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(168, 192, 255, 0.15); border-radius: 8px; transition: all 0.3s ease;"
+                        onmouseover="this.style.background='rgba(107, 122, 237, 0.25)'; this.style.transform='translateY(-2px)'"
+                        onmouseout="this.style.background='rgba(168, 192, 255, 0.15)'; this.style.transform='translateY(0)'">
+                        💻 GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/nh%E1%BA%ADt-duy-cao-475a08305/" target="_blank"
+                        rel="noopener noreferrer"
+                        style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(168, 192, 255, 0.15); border-radius: 8px; transition: all 0.3s ease;"
+                        onmouseover="this.style.background='rgba(107, 122, 237, 0.25)'; this.style.transform='translateY(-2px)'"
+                        onmouseout="this.style.background='rgba(168, 192, 255, 0.15)'; this.style.transform='translateY(0)'">
+                        💼 LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="profile-card">
+                    <h3 class="text-gradient">Quick Contact</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <a href="mailto:nhatduycao29@gmail.com">nhatduycao29@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <a href="tel:0385617175">0385617175</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <span>Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🎓</div>
+                            <span>University of Economics HCMC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Passionate about leveraging data to drive business decisions</p>
+        </div>
+
+        <div class="about-content">
+            <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
+                I'm a dedicated FinTech student at the University of Economics Ho Chi Minh City with a strong passion
+                for data analytics and business intelligence. With strong in <strong class="text-gradient">Python,
+                    SQL,
+                    Machine Learning, and Deep Learning</strong>, I specialize in transforming complex datasets into
+                actionable insights that drive strategic business decisions.
+                <br><br>
+                My experience spans across <strong class="text-gradient">sentiment analysis, predictive modeling,
+                    employee attrition prediction, and full-stack application development</strong>. I'm proficient in
+                utilizing advanced tools like PowerBI, Matplotlib, Seaborn, and modern frameworks to create
+                compelling data visualizations and robust analytical solutions.
+                <br><br>
+                I thrive in collaborative environments and am always eager to tackle challenging problems with
+                innovative data-driven approaches. My goal is to contribute to organizations that value
+                data-informed decision-making and continuous innovation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="section-header">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">Technical proficiencies and tools I work with</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>💻 Programming</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Python (Advanced)</span>
+                    <span class="skill-tag">JavaFx</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>🤖 Data Science & AI</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Machine Learning (Scikit-learn)</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">GenAI (RAG, LLM)</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>📊 Data Analysis</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">EDA</span>
+                    <span class="skill-tag">A/B Testing</span>
+                    <span class="skill-tag">Data Modeling</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">PowerBI</span>
+                    <span class="skill-tag">Matplotlib</span>
+                    <span class="skill-tag">Seaborn</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>🛠️ Tools & Technologies</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Jupyter Notebook</span>
+                    <span class="skill-tag">Git/GitHub</span>
+                    <span class="skill-tag">Draw.io</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Orange</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>💡 Soft Skills</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">English (6.0 IELTS)</span>
+                    <span class="skill-tag">Chinese (Basic)</span>
+                    <span class="skill-tag">Fast Learning</span>
+                    <span class="skill-tag">High Adaptability</span>
+                    <span class="skill-tag">Team Collaboration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="section-header">
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle">My journey in data analytics and development</p>
+        </div>
+
+        <div class="experience-timeline">
+            <!-- Project 1: Stock Sentiment Analysis -->
+            <div class="experience-item">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">
+                                <a href="https://nlp-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"
+                                    onmouseover="this.style.color='var(--accent-cyan)'; this.querySelector('.link-icon').style.transform='translateX(5px)'"
+                                    onmouseout="this.style.color='inherit'; this.querySelector('.link-icon').style.transform='translateX(0)'">
+                                    Stock Sentiment Analysis & Prediction (NLP & Fintech)
+                                    <span class="link-icon"
+                                        style="font-size: 0.8em; transition: transform 0.3s ease;">🔗</span>
+                                </a>
+                            </h3>
+                            <p class="experience-company">Personal Project</p>
+                        </div>
+                        <span class="experience-date">Recent</span>
+                    </div>
+                    <p class="experience-description">
+                        Led an end-to-end analytics project to quantify Vietnamese investor sentiment from social media
+                        and evaluate its relationship with stock market volatility.
+                    </p>
+                    <ul class="experience-highlights">
+                        <li><strong>Conducted EDA</strong> on web-scraped discussions using Python (Pandas, NumPy) and
+                            leveraged Gemini API for automated data labeling and cleaning.</li>
+                        <li><strong>Benchmarked Scikit-learn algorithms</strong> (SVM, Random Forest) against BiLSTM and
+                            PhoBERT. Result: Fine-tuned PhoBERT achieved <strong>70% F1-score</strong>, significantly
+                            outperforming baseline models.</li>
+                        <li><strong>Applied Granger Causality Tests</strong> which revealed no statistical causality,
+                            effectively debunking the assumption that sentiment is a predictive signal rather than a
+                            reactive signal.</li>
+                        <li><strong>Deployed an interactive Chatbot</strong> to visualize model outputs, making complex
+                            data accessible for end-users.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 2: Employee Attrition Prediction -->
+            <div class="experience-item">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Employee Attrition Prediction & Segmentation (Deep Learning &
+                                GenAI)</h3>
+                            <p class="experience-company">Personal Project</p>
+                        </div>
+                        <span class="experience-date">Recent</span>
+                    </div>
+                    <p class="experience-description">
+                        Analyzed workforce dynamics using Deep Learning and Clustering techniques on a
+                        <strong>10,000-record dataset</strong>
+                        to predict turnover and optimize retention strategies.
+                    </p>
+                    <ul class="experience-highlights">
+                        <li><strong>Data Analysis & Segmentation:</strong> Processed HR datasets using AutoEncoder for
+                            dimensionality reduction and applied K-Means to segment workforce into distinct clusters,
+                            identifying high-risk groups (e.g., Sales personnel) that generic analysis missed.</li>
+                        <li><strong>Modeling & Evaluation:</strong> Built a Multi-Layer Perceptron (MLP) model using
+                            TensorFlow/Keras with Class Weighting to handle imbalanced data. Result: Achieved
+                            <strong>66% Recall</strong> on the minority class, prioritizing the identification of
+                            potential leavers over overall accuracy.
+                        </li>
+                        <li><strong>Insight & Deployment:</strong> Integrated a RAG-based Chatbot (LLM) to democratize
+                            data access, allowing HR stakeholders to query employee risk profiles and policy impacts via
+                            natural language.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 3: Student Management System -->
+            <div class="experience-item">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Student Management System - JavaFX Project</h3>
+                            <p class="experience-company">Academic Project</p>
+                        </div>
+                        <span class="experience-date">2023-2024</span>
+                    </div>
+                    <p class="experience-description">
+                        Developed a full-stack desktop application for managing student records, focusing on relational
+                        database
+                        design, automation, and reporting systems.
+                    </p>
+                    <ul class="experience-highlights">
+                        <li><strong>Designed a normalized Relational Database Schema (MySQL)</strong> with <strong>5
+                                linked tables</strong>. Implemented strict constraints (Foreign Keys, ON DELETE CASCADE)
+                            and Transaction Management to ensure 100% data integrity during CRUD operations across
+                            multiple tables.</li>
+                        <li><strong>Programmed an automated Data Seeding module</strong> using Java algorithms to
+                            generate and inject <strong>100+ synthetic student records</strong>, mimicking real-world
+                            data with validation logic (Regex) to ensure input quality.</li>
+                        <li><strong>Built an Admin Dashboard with JavaFX Charts</strong> to visualize academic
+                            performance (GPA distribution) and integrated Apache POI library to automate data export to
+                            Excel for reporting purposes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="section-header">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic background and achievements</p>
+        </div>
+
+        <div class="education-grid">
+            <div class="education-card">
+                <div class="education-info">
+                    <h3>University of Economics Ho Chi Minh City (UEH)</h3>
+                    <p class="education-major">Major: Fintech</p>
+                    <p class="education-gpa">GPA: 3.56/4.00</p>
+                </div>
+                <div class="education-year">2023-2027</div>
+            </div>
+
+            <div class="education-card">
+                <div class="education-info">
+                    <h3>Le Khiet High School for the Gifted</h3>
+                    <p class="education-major">Major: IT</p>
+                    <p class="education-gpa">Graduated with Honors</p>
+                </div>
+                <div class="education-year">2020-2023</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's discuss how I can contribute to your team</p>
+        </div>
+
+        <div class="contact-container">
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                I'm currently open to <strong class="text-gradient">Data Analyst, Data Science, and Business
+                    Analyst</strong>
+                opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+            </p>
+
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="contact-card-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:nhatduycao29@gmail.com">nhatduycao29@gmail.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon">📱</div>
+                    <h3>Phone</h3>
+                    <a href="tel:0385617175">0385 617 175</a>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <a href="mailto:nhatduycao29@gmail.com" class="btn btn-primary" style="display: inline-block;">
+                    Send Me an Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="mailto:nhatduycao29@gmail.com" class="social-link" aria-label="Email" title="Email">📧</a>
+                <a href="https://github.com/yudnhat25" class="social-link" aria-label="GitHub" title="GitHub"
+                    target="_blank" rel="noopener noreferrer">💻</a>
+                <a href="https://www.linkedin.com/in/nh%E1%BA%ADt-duy-cao-475a08305/" class="social-link"
+                    aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">💼</a>
+            </div>
+            <p class="footer-text">
+                &copy; 2026 Cao Nhat Duy. Designed & Built with passion for data analytics.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
