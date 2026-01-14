@@ -6,22 +6,22 @@
     /* Color Palette - Light Blue Pastel Theme */
     --primary-gradient: linear-gradient(135deg, #a8c0ff 0%, #3f5efb 100%);
     --secondary-gradient: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
-    --accent-gradient: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    --accent-gradient: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
     --success-gradient: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
 
     --bg-primary: #f0f4ff;
     --bg-secondary: #ffffff;
-    --bg-card: rgba(255, 255, 255, 0.9);
+    --bg-card: rgba(255, 255, 255, 0.95);
     --bg-card-hover: rgba(255, 255, 255, 1);
 
-    --text-primary: #2d3748;
-    --text-secondary: #4a5568;
-    --text-muted: #718096;
+    --text-primary: #0f1419;
+    --text-secondary: #1a202c;
+    --text-muted: #2d3748;
 
-    --accent-purple: #6b7aed;
-    --accent-pink: #f093fb;
-    --accent-cyan: #66a6ff;
-    --accent-green: #4fd1c5;
+    --accent-purple: #5563d1;
+    --accent-pink: #e85d9a;
+    --accent-cyan: #4a90e2;
+    --accent-green: #3cb371;
 
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -132,16 +132,19 @@ h1 {
 h2 {
     font-size: clamp(2rem, 4vw, 3rem);
     color: var(--text-primary);
+    font-weight: 800;
 }
 
 h3 {
     font-size: clamp(1.5rem, 3vw, 2rem);
     color: var(--text-primary);
+    font-weight: 700;
 }
 
 p {
     color: var(--text-secondary);
     margin-bottom: var(--spacing-sm);
+    font-weight: 500;
 }
 
 a {
@@ -201,8 +204,8 @@ a:hover {
 }
 
 .nav-link {
-    color: var(--text-secondary);
-    font-weight: 500;
+    color: var(--text-primary);
+    font-weight: 600;
     position: relative;
     padding: 0.5rem 0;
     transition: var(--transition-fast);
@@ -271,9 +274,9 @@ a:hover {
 
 .hero-greeting {
     font-size: 1.2rem;
-    color: var(--accent-cyan);
+    color: #4a90e2;
     margin-bottom: var(--spacing-sm);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .hero-title {
@@ -282,8 +285,9 @@ a:hover {
 
 .hero-subtitle {
     font-size: clamp(1.5rem, 3vw, 2.5rem);
-    color: var(--text-secondary);
+    color: var(--text-primary);
     margin-bottom: var(--spacing-md);
+    font-weight: 600;
 }
 
 .hero-roles {
@@ -295,11 +299,11 @@ a:hover {
 
 .role-tag {
     padding: 0.5rem 1rem;
-    background: rgba(168, 192, 255, 0.2);
-    border: 2px solid rgba(107, 122, 237, 0.3);
+    background: rgba(168, 192, 255, 0.25);
+    border: 2px solid rgba(107, 122, 237, 0.4);
     border-radius: var(--radius-lg);
-    color: var(--accent-purple);
-    font-weight: 500;
+    color: #5563d1;
+    font-weight: 600;
     transition: var(--transition-fast);
 }
 
@@ -458,15 +462,16 @@ a:hover {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px;
+    width: 100%;
     height: 4px;
     background: var(--accent-gradient);
     border-radius: 2px;
 }
 
 .section-subtitle {
-    color: var(--text-muted);
+    color: var(--text-secondary);
     font-size: 1.1rem;
+    font-weight: 500;
 }
 
 /* ===================================
@@ -474,12 +479,16 @@ a:hover {
    =================================== */
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing-lg);
+    justify-content: center;
 }
 
 .skill-category {
+    flex: 1 1 300px;
+    min-width: 300px;
+    max-width: 350px;
     background: var(--bg-card);
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
@@ -528,11 +537,12 @@ a:hover {
 
 .skill-tag {
     padding: 0.5rem 1rem;
-    background: rgba(168, 192, 255, 0.15);
-    border: 1px solid rgba(107, 122, 237, 0.3);
+    background: rgba(168, 192, 255, 0.2);
+    border: 1px solid rgba(107, 122, 237, 0.4);
     border-radius: var(--radius-md);
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font-size: 0.9rem;
+    font-weight: 600;
     transition: var(--transition-fast);
 }
 
@@ -585,8 +595,31 @@ a:hover {
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
     border: 2px solid rgba(168, 192, 255, 0.2);
-    transition: var(--transition-normal);
+    transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(107, 122, 237, 0.08);
+}
+
+.experience-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.experience-card-link:hover .experience-card {
+    transform: translateY(-8px) translateX(10px);
+    box-shadow: 0 12px 40px rgba(107, 122, 237, 0.25);
+    background: var(--bg-card-hover);
+    border-color: var(--accent-cyan);
+}
+
+.experience-card-link:hover .link-icon {
+    transform: translateX(5px);
+}
+
+.experience-card-link:active .experience-card {
+    transform: translateY(-4px) translateX(10px);
 }
 
 .experience-card:hover {
@@ -605,14 +638,16 @@ a:hover {
 }
 
 .experience-title {
-    color: var(--accent-cyan);
+    color: #4a90e2;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 
 .experience-company {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .experience-date {
@@ -637,6 +672,7 @@ a:hover {
     padding-left: var(--spacing-md);
     margin-bottom: var(--spacing-sm);
     color: var(--text-secondary);
+    font-weight: 500;
 }
 
 .experience-highlights li::before {

@@ -74,7 +74,7 @@
 
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#experience" class="btn btn-secondary">View My Work</a>
+                    <a href="#experience" class="btn btn-secondary">My Experience</a>
                 </div>
 
                 <div class="hero-social" style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center;">
@@ -222,40 +222,44 @@
         <div class="experience-timeline">
             <!-- Project 1: Stock Sentiment Analysis -->
             <div class="experience-item">
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">
-                                <a href="https://nlp-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer"
-                                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"
-                                    onmouseover="this.style.color='var(--accent-cyan)'; this.querySelector('.link-icon').style.transform='translateX(5px)'"
-                                    onmouseout="this.style.color='inherit'; this.querySelector('.link-icon').style.transform='translateX(0)'">
+                <a href="https://nlp-omega-nine.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="experience-card-link">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">
                                     Stock Sentiment Analysis & Prediction (NLP & Fintech)
                                     <span class="link-icon"
                                         style="font-size: 0.8em; transition: transform 0.3s ease;">🔗</span>
-                                </a>
-                            </h3>
-                            <p class="experience-company">Personal Project</p>
+                                </h3>
+                                <p class="experience-company">Personal Project</p>
+                            </div>
+                            <span class="experience-date">Recent</span>
                         </div>
-                        <span class="experience-date">Recent</span>
+                        <p class="experience-description">
+                            Led an end-to-end analytics project to quantify Vietnamese investor sentiment from social
+                            media
+                            and evaluate its relationship with stock market volatility.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li><strong>Conducted EDA</strong> on web-scraped discussions using Python (Pandas, NumPy)
+                                and
+                                leveraged Gemini API for automated data labeling and cleaning.</li>
+                            <li><strong>Benchmarked Scikit-learn algorithms</strong> (SVM, Random Forest) against BiLSTM
+                                and
+                                PhoBERT. Result: Fine-tuned PhoBERT achieved <strong>70% F1-score</strong>,
+                                significantly
+                                outperforming baseline models.</li>
+                            <li><strong>Applied Granger Causality Tests</strong> which revealed no statistical
+                                causality,
+                                effectively debunking the assumption that sentiment is a predictive signal rather than a
+                                reactive signal.</li>
+                            <li><strong>Deployed an interactive Chatbot</strong> to visualize model outputs, making
+                                complex
+                                data accessible for end-users.</li>
+                        </ul>
                     </div>
-                    <p class="experience-description">
-                        Led an end-to-end analytics project to quantify Vietnamese investor sentiment from social media
-                        and evaluate its relationship with stock market volatility.
-                    </p>
-                    <ul class="experience-highlights">
-                        <li><strong>Conducted EDA</strong> on web-scraped discussions using Python (Pandas, NumPy) and
-                            leveraged Gemini API for automated data labeling and cleaning.</li>
-                        <li><strong>Benchmarked Scikit-learn algorithms</strong> (SVM, Random Forest) against BiLSTM and
-                            PhoBERT. Result: Fine-tuned PhoBERT achieved <strong>70% F1-score</strong>, significantly
-                            outperforming baseline models.</li>
-                        <li><strong>Applied Granger Causality Tests</strong> which revealed no statistical causality,
-                            effectively debunking the assumption that sentiment is a predictive signal rather than a
-                            reactive signal.</li>
-                        <li><strong>Deployed an interactive Chatbot</strong> to visualize model outputs, making complex
-                            data accessible for end-users.</li>
-                    </ul>
-                </div>
+                </a>
             </div>
 
             <!-- Project 2: Employee Attrition Prediction -->
