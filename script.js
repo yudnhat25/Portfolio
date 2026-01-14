@@ -119,10 +119,10 @@ animatedElements.forEach(element => {
 // ===================================
 
 const roles = [
-    'Data Science Specialist',
-    'Data Analyst Professional',
-    'Business Analyst Expert',
-    'Machine Learning Engineer',
+    'Data Science',
+    'Data Analyst',
+    'Business Analyst',
+    'Machine Learning',
     'FinTech Enthusiast'
 ];
 
