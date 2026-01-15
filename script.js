@@ -1,13 +1,9 @@
-// ===================================
-// NAVIGATION FUNCTIONALITY
-// ===================================
 
 const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 const navLinks = document.querySelectorAll('.nav-link');
 
-// Navbar scroll effect
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
@@ -164,10 +160,6 @@ function typeEffect() {
 window.addEventListener('load', () => {
     setTimeout(typeEffect, 1000);
 });
-
-// ===================================
-// SKILL TAG HOVER EFFECTS
-// ===================================
 
 const skillTags = document.querySelectorAll('.skill-tag');
 
@@ -370,11 +362,6 @@ if ('IntersectionObserver' in window) {
     lazyImages.forEach(img => imageObserver.observe(img));
 }
 
-// ===================================
-// ANALYTICS (Optional - Add your tracking code)
-// ===================================
-
-// Track button clicks
 const ctaButtons = document.querySelectorAll('.btn');
 ctaButtons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -383,11 +370,6 @@ ctaButtons.forEach(btn => {
     });
 });
 
-// ===================================
-// ACCESSIBILITY ENHANCEMENTS
-// ===================================
-
-// Keyboard navigation for mobile menu
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && navMenu.classList.contains('active')) {
         navMenu.classList.remove('active');
@@ -415,16 +397,10 @@ focusableElements.forEach(element => {
     });
 });
 
-// ===================================
-// INITIALIZATION
-// ===================================
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Portfolio website loaded successfully! 🚀');
 
-    // Add any initialization code here
-
-    // Preload critical resources
     const criticalLinks = document.querySelectorAll('link[rel="preconnect"]');
     console.log(`Preconnecting to ${criticalLinks.length} domains for faster loading`);
 });
